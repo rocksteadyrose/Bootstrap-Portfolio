@@ -47,38 +47,50 @@
     </div>
 </nav>
 
-<div class="col-md-9">
-    <form>
-        <h1>Contact</h1>
-        <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="name" class="form-control" id="name" placeholder="Leslie Rose">
-        </div>
-        <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="leslie@leslie.com">
-        </div>
-        <div class="form-group">
-        <label for="exampleFormControlTextarea1">Message:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hi!"></textarea>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-</div>
+<!-- Main Body goes in Container -->
+<div class="container">
 
-<div class="col-md-3">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-        <h3 class="panel-title">Connect with Me</h3>
+        <!-- The content in this div gets wrapped in a panel -->
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Form</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="name" class="form-control" id="name" placeholder="Leslie Rose">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="leslie@leslie.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hi!"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="panel-body">
-        <a href="https://github.com/rocksteadyrose" target="blank"><img id="github" src="assets/images/github.png" alt="Github" width="20%"></a>
-        <a href="https://www.linkedin.com/in/leslie-rose/" target="blank"><img id="linkedin" src="assets/images/linkedin.png" alt="LinkedIn" width="20%"></a>
-        <a href="https://stackoverflow.com/users/9195818/leslie-rose?tab=profile" target="blank"><img id="stack" src="assets/images/stackoverflow.png" alt="Stack Overflow" width="20%"></a>
+
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Connect with Me</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="https://github.com/rocksteadyrose" target="blank"><img id="github" src="assets/images/github.png" alt="Github"  width="30%"></a>
+                            <a href="https://www.linkedin.com/in/leslie-rose/" target="blank"><img id="linkedin" src="assets/images/linkedin.png" alt="LinkedIn"  width="30%"></a>
+                            <a href="https://stackoverflow.com/users/9195818/leslie-rose?tab=profile" target="blank"><img id="stack" src="assets/images/stackoverflow.png" alt="Stack Overflow" width="30%"></a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
         </div>
-         </div>
-        </div>
-    </div>
+</div>
 </div>
         
           <footer class="footer">
