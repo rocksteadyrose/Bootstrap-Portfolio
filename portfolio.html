@@ -25,6 +25,11 @@
                 height: 60px;
                 background-color: #f5f5f5;
               }
+
+            .img-responsive {
+                  min-height: 250px;
+                  width: 100%;
+              }
         
             </style>
 
@@ -32,38 +37,105 @@
 
 <body>
 
+<!-- Nav -->
         <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
+            <div class="container">
+                <div class="navbar-header">
                     <h2 class="navbar-brand">Leslie Rose</h2>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="index.html">About</a></li>
                     </ul>
-                    </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-                <header>
-                    <h1>Portfolio</h1>
-                </header>
- 
-            <div class="col-xs-6 col-md-9">
-                    <img class="thumbnail" src="assets/images/pexels-photo-515171.jpeg" alt="Hangman" width="100px">
-                        <h3>Hangman</h3>
-                    <img class="thumbnail" src="assets/images/pexels-photo-459719.jpeg" alt="RPG" width="100px">
-                    <h3>RPG Game</h3>
-                <img class="thumbnail" src="assets/images/pexels-photo-332825.jpeg" alt="Trivia" width="100px">
-                    <h3>Trivia Game</h3>
-                <img class="thumbnail" src="assets/images/pexels-photo-399161.jpeg" alt="Rutgers" width="100px">
-                    <h3>Rutgers Info Widget</h3>
-                <img class="thumbnail" src="assets/images/pexels-photo-92904.jpeg" alt="Rock-Paper-Scissors" width="100px">
-                    <h3>Rock Paper Scissors</h3>
+<!-- Main Body goes in Container -->
+<div class="container">
+        <div class="row">
+
+    
+<!-- Portfolio -->
+    <div class="col-md-9">
+        <div class="panel panel-default">
+            
+            <div class="panel-heading">
+                <h3 class="panel-title">Portfolio</h3>
+            </div>
+            
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="assets/images/pexels-photo-515171.jpeg" alt="Hangman">
+                                <div class="caption">
+                                    <h3>Hangman</h3>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="assets/images/pexels-photo-459719.jpeg" alt="RPG">
+                                <div class="caption">
+                                    <h3>RPG Game</h3>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="assets/images/pexels-photo-332825.jpeg" alt="Trivia">
+                                <div class="caption">
+                                    <h3>Trivia Game</h3>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="assets/images/pexels-photo-399161.jpeg" alt="Rutgers">
+                                <div class="caption">
+                                    <h3>Rutgers Info Widget</h3>
+                                </div>
+                        </div>        
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img class="img-responsive" src="assets/images/pexels-photo-92904.jpeg" alt="Rock-Paper-Scissors">
+                                <div class="caption">
+                                    <h3>Rock Paper Scissors</h3>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
+
+
+<!-- Connect -->
     <div class="col-md-3">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -72,8 +144,8 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="https://github.com/rocksteadyrose" target="blank"><img id="github" src="assets/images/github.png" alt="Github"  width="30%"></a>
-                        <a href="https://www.linkedin.com/in/leslie-rose/" target="blank"><img id="linkedin" src="assets/images/linkedin.png" alt="LinkedIn"  width="30%"></a>
+                        <a href="https://github.com/rocksteadyrose" target="blank"><img id="github" src="assets/images/github.png" alt="Github" width="30%"></a>
+                        <a href="https://www.linkedin.com/in/leslie-rose/" target="blank"><img id="linkedin" src="assets/images/linkedin.png" alt="LinkedIn" width="30%"></a>
                         <a href="https://stackoverflow.com/users/9195818/leslie-rose?tab=profile" target="blank"><img id="stack" src="assets/images/stackoverflow.png" alt="Stack Overflow" width="30%"></a>
                     </div>
                 </div> 
@@ -81,6 +153,10 @@
         </div>
     </div>
 
+</div>
+</div>
+
+<!-- Footer -->
     <footer class="footer">
             <div class="container">
               <p class="text-muted"><h6>© 2018 Leslie Rose</h6></p>
