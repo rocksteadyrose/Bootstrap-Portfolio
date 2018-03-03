@@ -10,275 +10,84 @@
     font-weight: normal;
 }
 
-* {
-    box-sizing: border-box;
-  }
-
-  body {
-      font-family: "assistantregular", Arial, Helvetica, sans-serif;
-      background-image: url('../images/021 True Sunset.png');
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      color: #04045C;
-  }
-
-#nav-container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #1CBABC;
-    float: left;
-    height: 70px;
-    border-bottom: solid #EEA25F 3px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-}
-
-#navbar {
-    width: 960px;
-    margin: 0 auto;
-}
-
-#wrapper {
-    margin: 0 auto;
-    width: 960px;
-    flex: 1;
-    padding-top: 20px;
-}
-
-#name {
-    float: left;
-    background-color: #EE728C;
-    color: #6CD1C8;
-    padding: 25px 25px 15px 25px;
-    line-height: 18px;
-    font-family: "sailregular";
-    font-size: 30px;
-    height: 70px;
-    text-shadow: 0 2px 2px #04045C;
-}
-
-.hr {
-    border-top: 1px solid #EE728C;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-p {
-    padding-bottom: 10px;
-}
-
-p a {
-    text-decoration: none;
-    color: #EE728C;
-}
-
-p a:hover {
-    color: #1CBABC;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0 auto;
-}
-
-li {
-    float: right;
-}
-
-li a {
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: "assistantregular", Arial, Helvetica, sans-serif;
+    background-image: url('../images/021 True Sunset.png');
     color: #04045C;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 23px 17px 10px;
-    opacity: 0.7;
-    display: block;
-    height: 70px;
-    overflow: hidden;
-}
+  }
 
-li a:hover {
-    color: #EE728C;
-    background-color: #04045C;
-}
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
 
-#about, #contact, #portfolio {
-    width: 650px;
-    background-color: #EEC89C;
-    margin: 15px 0 10px;
-    border: 3px solid #1CBABC;
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #6CD1C8;
+    border: solid #04045C 1px;
+    text-align: center;
+    padding-top: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    float: left;
-    padding: 15px 25px;
+  }
+
+  .img-responsive {
+    min-height: 250px;
+    width: 100%;
 }
 
-#about p {
-    line-height: 20px;
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    font-family: "sailregular", Arial, Helvetica, sans-serif;
+    color: #EE728C;
+    font-size: 28px;
+    margin-left: .5px;
+    text-shadow: 0 1px 2px #04045C;
+    /*background-color: #EE728C;*/
 }
 
-#about h1 {
-    font-size: 25px;
-    padding: 10px 0 10px 0;
+.navbar {
+    background-color: #6CD1C8;
+    border: solid #04045C 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #04045C;
 }
 
 #aboutpic {
-    width: 200px;
-    margin: 8px 18px 0 0;
-    float: left;
-    padding-bottom: 3px;
+    padding-right: 17px;
 }
 
-#portfolio {
-    padding: 25px;
-}
-
-#portfolio .hr {
-    width: 96%;
-}
-
-#portfolio h1 {
-    margin-left: 12px;
-    font-size: 25px;
-    padding: 20px 0 10px 0;
-}
-
-.portfolioimages {
-    width: 50%;
-    height: 250px;
-    float: left;
-    padding: 12px;
-}
-
-#hangmanfigure, #rpgfigure, #triviafigure, #rutgersfigure, #rpscissorsfigure {
-    position: relative;
-    margin: 0 auto;
-}
-
-#hangmancaption {
-    position: absolute;
-    top: 170px;
-    left: 12px;
-    padding: 15px 93.5px 15px 98.5px;
-}
-
-#rpgcaption {
-    position: absolute;
-    top: 170px;
-    right: 11.8px;
-    padding: 15px 95.2px 15px 90.5px;
-}
-
-#triviacaption {
-    position: absolute;
-    top: 170px;
-    left: 12px;
-    padding: 15px 87.1px 15px 88px;
-}
-
-#rutgerscaption {
-    position: absolute;
-    padding: 0 43px 0 32px;
-    top: 170px;
-    right: 12px;
-    padding: 15px 60px 15px 52px;
-}
-
-#rpscissorscaption {
-    position: absolute;
-    padding: 0px 36.5px 0px;
-    top: 170px;
-    left: 12px;
-    padding: 15px 52px 15px 57px;
-}
-
-.clearfix:after { 
-    content: "."; 
-    visibility: hidden; 
-    display: block; 
-    height: 0; 
-    clear: both;
- }
-
-figcaption {
-    background-color: #EE728C;
-    font-size: 20px;
-}
-
-figcaption:hover {
-    background-color: #04045C;
-    color: #1CBABC;
-}
-
-#contact {
-    padding: 0 20px 30px 20px;
-    line-height: 20px;
+li {
     color: #04045C;
 }
 
-#contact h1 {
-    font-size: 25px;
-    padding: 20px 0 10px 0;
-}
-
-.nameemailinput {
-    width: 100%;
-    border: solid .5px black;
-}
-
-#textareainput {
-    width: 100%;
-    height: 200px;
-    resize: none;
-    margin-top: 4px;
-}
-
-#button {
-    background-color: #EE728C;
-    padding: 10px;
-    border: solid 0;
-    width: 70px;
-    margin-top: 10px;
-    color: #04045C;
-    font-size: 1em;
-}
-
-#button:hover {
+.panel {
     background-color: #6CD1C8;
-}
-
-#connect {
-    float: right;
-    background-color: #EEC89C;
-    text-align: center;
+    border: solid #04045C 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 3px solid #1CBABC;
-    margin-top: 15px;
-    padding: 20px;
-    width: 270px;
 }
 
-/*#connect h1 {
-    padding-bottom: 22px;
-    font-size: 25px;
-}*/
-
-#github, #stack, #linkedin {
-    width: 30%;
-    height: 75px;
-}
-
-#github:hover, #stack:hover, #linkedin:hover {
+.panel > .panel-heading {
     background-color: #04045C;
+    color: #EE728C;
+    padding-top: 8px;
 }
 
-footer {
-    clear: both;
+.thumbnail {
+    background-color: #EE728C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumbnail h3 {
+    color: #6CD1C8;
     text-align: center;
-    background-color: #1CBABC;
-    margin-top: 30px;   
-    padding: 33px;
-    border-top: #EEAC9C 5px solid;
-    box-shadow: 4px -2px 10px 3px rgba(2, 0, 0, 0.2), 4px -2px 10px 0 rgba(2, 0, 0, 0.19);
+    text-shadow: 0 1px 2px #04045C;
 }
