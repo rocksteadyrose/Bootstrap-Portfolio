@@ -73,6 +73,10 @@ html {
     margin-right: 10px;
 }
 
+.bio a:hover {
+    color: #EE728C;
+}
+
 .socials {
     width: 30%;
 }
