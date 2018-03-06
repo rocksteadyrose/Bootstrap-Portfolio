@@ -11,7 +11,6 @@
 }
 
 body {
-    /* Margin bottom by footer height */
     margin-bottom: 60px;
     font-family: "assistantregular", Arial, Helvetica, sans-serif;
     background-image: url('../images/021 True Sunset.png');
@@ -24,22 +23,18 @@ html {
   }
   
 
-  .footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #6CD1C8;
     border: solid #04045C 1px;
     text-align: center;
     padding-top: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+ }
 
-  /*.img-responsive {
-    min-height: 250px;
-}*/
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     font-family: "sailregular", Arial, Helvetica, sans-serif;
@@ -47,7 +42,6 @@ html {
     font-size: 28px;
     margin-left: .5px;
     text-shadow: 0 1px 2px #04045C;
-    /*background-color: #EE728C;*/
 }
 
 .navbar {
@@ -70,14 +64,25 @@ html {
     color: #EE728C;
 }
 
+.caption:hover {
+    background-color: #04045C;
+}
 
 .col-md-12 > .img-responsive {
     width: 150px;
     margin-right: 10px;
 }
 
+.socials {
+    width: 30%;
+}
+
 .col-md-9 .pull-left {
     float: left;
+}
+
+#linked:hover, #stack:hover, #git:hover {
+    background-color: #04045C;
 }
 
 .panel {
